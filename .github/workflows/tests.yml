@@ -3,11 +3,10 @@ name: Tests
 on:
   push:
     branches:
-      - master
-      - '*.x'
+      - backend
   pull_request:
-  schedule:
-    - cron: '0 0 * * *'
+    branches:
+      - backend
 
 permissions:
   contents: read
